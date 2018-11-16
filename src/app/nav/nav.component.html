@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- BRANDING ICON -->
+  <a class="navbar-brand" href="#">
+    <img src="../assets/profile.png" alt="Profile Icon" style ="width: 30px; height: 30px;" class ="icon-logo">
+  </a>
+    <!-- BUTTON TOGGLER for small device -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- COLLAPSED if the width is less than -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- SEARCH BAR -->
+    <form class="form-inline my-2 my-lg-0 mr-auto">
+        <div class="input-group mr-5">
+            <input type="text" class="form-control search-tab" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+            </div>
+        </div>
+    </form>
+    <!-- USER'S NAVIGATION ICON -->
+    <ul class="navbar-nav">
+        <!-- for message -->
+        <li class="nav-item">
+          <a class ="nav-link" href="#">
+              <i class="fa fa-envelope-o icon" aria-hidden="true" data-toggle ="tooltip" title ="Message"></i>
+          </a>
+        </li>
+        <!-- for notification -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-bell-o icon" aria-hidden="true" data-toggle ="tooltip" title ="Notification"></i>
+          </a>
+        </li>
+        <!-- for user's image -->
+        <li class="nav-item">
+          <a class ="nav-link" href="#">
+              <i class="fa fa-user-o icon" aria-hidden="true"></i>
+          </a>
+        </li>
+        <!-- dropdown menu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-th-list menu" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+  </div>
+</nav>

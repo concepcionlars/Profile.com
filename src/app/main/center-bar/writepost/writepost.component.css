@@ -1,0 +1,198 @@
+.writeApost_component {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.writeApost_component .image_container {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.writeApost_component .image_container .thumbnail {
+    width: 45px;
+    height: 45px;
+    padding-left: 0px;
+    border-radius: 50px;
+}
+
+.writeApost_component .image_container .thumbnail .owner_photo {
+    width: 45px;
+    height: 45px;
+    padding-left: 0px;
+    border-radius: 50px;
+}
+
+.writeApost_component .user_data {
+    
+}
+
+.writeApost_component .user_data .userdata_container {
+    height: 20px !important;
+    padding-top: 10px;
+    line-height: 10px;
+}
+
+.data_content {
+    padding-left: 0px;
+}
+
+.username {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.usercourse {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* textarea and other input fields */
+
+.writeApost_component .container .pen {
+    margin-top: 12px;
+    padding: 0px;
+}
+
+.writeApost_component .container .pen .input_container {
+    padding: 0px;
+    width: 120px;
+}
+
+.writeApost_component .pen .input_container .textarea {
+    border: 1px solid transparent; 
+    color: gray;
+    font-size: 0.9rem;
+    width: 100%;
+    height: auto;
+    resize: none;
+}
+
+.writeApost_component .pen .input_container .imageInput {
+    display: none;
+    visibility: hidden;
+}
+
+.writeApost_component .pen .input_container .videoInput {
+    display: none;
+    visibility: hidden;
+}
+
+.writeApost_component .pen .input_container .submitBtn {
+    display: none;
+    visibility: none;
+}
+
+.textarea:focus {
+    outline-width: 0px;
+}
+
+/* image and video presentation */
+.media-presentation {
+    /* border: 1px solid red; */
+    width: 110%;
+    height: auto;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.media-presentation .presentation {
+    /* border: 1px solid blue; */
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*===================================*/
+/* property of image previewer */
+/*===================================*/
+
+.media-presentation .presentation .image-container {
+    /* border: 1px solid green; */
+}
+
+.media-presentation .presentation .image-container .image-preview {
+
+}
+
+.media-presentation .presentation .image-container .image-preview .image-file-container {
+    padding: 7px;
+    margin: 0px;
+}
+
+.media-presentation .presentation .image-container .image-preview .image-container .remover_icon {
+    border: 1px solid black;
+}
+
+.media-presentation .presentation .image-container .image-preview .image-file-container .thumbnail {
+    width: 115px;
+    height: 115px;
+}
+
+.media-presentation .presentation .image-container .image-preview .image-file-container .thumbnail .img-thumbnail {
+    width: 115px !important;
+    height: 115px !important;
+    margin: 0px;
+}
+
+.img-thumbnail:hover {
+    border: 1px solid rgba(20, 20, 240, 0.5);
+}
+
+/* property of video previewer */
+.media-presentation .presentation .video-container {
+    /* border: 1px solid green; */
+}
+
+/* buttons including image and video uploader */
+button:focus {outline:0;}
+
+.container .pen .button-group {
+    padding: 0px;
+    height: 30px;
+}
+
+.container .pen .button-group .button {
+    margin-left: 20px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.container .pen .button-group .button .icon {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+/* post setting dropdown menu */
+.container .pen .button-group .dropdown {
+    border-radius: 0px;
+    float: right;
+}
+
+.container .pen .button-group .dropdown .btn {
+    border-radius: 0px;
+    padding: 2px 15px 2px 15px;
+    font-weight: bold;
+}
+
+.container .pen .button-group .dropdown .btn:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: gray;
+}
+
+.container .pen .button-group .dropdown .btn:focus {
+    outline: none;
+    outline: 0;
+}
+
+/* submit button */
+.container .pen .button-group .submit_btn {
+    border-radius: 0px;
+    margin-left: 8px;
+    font-weight: bold;
+    padding: 2px 15px 2px 15px;
+}

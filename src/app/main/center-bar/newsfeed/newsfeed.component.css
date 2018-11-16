@@ -1,0 +1,94 @@
+.newsfeed_component {
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.newsfeed_component .container-fluid {
+
+}
+
+.newsfeed_component .container-fluid .postOwner_container {
+
+}
+
+.newsfeed_component .container-fluid .postOwner_container .ownerImage {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.newsfeed_component .container-fluid .postOwner_container .ownerImage .thumbnail {
+    width: 45px;
+    height: 45px;
+    padding-left: 0px;
+    border-radius: 50px;
+}
+
+.newsfeed_component .container-fluid .postOwner_container .ownerImage .thumbnail .owner_photo {
+    width: 45px;
+    height: 45px;
+    padding-left: 0px;
+    border-radius: 50px;
+}
+
+.newsfeed_component .container-fluid .postOwner_container .ownerInfo {
+
+}
+
+.newsfeed_component .container-fluid .postOwner_container .ownerInfo .userdata_container {
+    height: 20px !important;
+    padding-top: 10px;
+    line-height: 10px;
+}
+
+.newsfeed_component .container-fluid .postOwner_container .ownerInfo .userdata_container .data_content {
+    padding-left: 0px;
+}
+
+.newsfeed_component .container-fluid .postOwner_container .ownerInfo .userdata_container .data_content .username {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.newsfeed_component .container-fluid .postOwner_container .ownerInfo .userdata_container .data_content .usercourse {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.newsfeed_component .container-fluid .postOwner_container .ownerInfo .userdata_container .data_content .timeline {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.newsfeed_component .container-fluid .postOwner_container .dropdown {
+    border: 1px solid green;
+    height: 0px;
+    width: 0px;
+}
+
+.newsfeed_component .container-fluid .postOwner_container .dropdown .dropdown-toggle {
+    cursor: pointer;
+}
+
+/* post media content */
+
+.newsfeed_component .post_container {
+    /* padding: 0px !important; */
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+}
+
+.newsfeed_component .post_container .col-12 {
+    padding: 0px;
+}
+
+.newsfeed_component .post_container .media_container {
+    width: 100%;
+}
+
+.newsfeed_component .post_container .media_container .media {
+    width: 100%;
+    max-height: 500px;
+}

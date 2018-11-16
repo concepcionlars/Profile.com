@@ -1,0 +1,88 @@
+<div class ="row writeApost_component">
+  <!-- user information includeing photo and fullname  -->
+  <div class ="image_container">
+    <a href="" class ="thumbnail">
+      <img src="../assets/me.jpg" alt="owner image" class ="owner_photo">
+    </a>
+  </div>
+  <div class ="col-10 user_data">
+    <div class ="row userdata_container" style ="height: 10px;">
+      <div class ="col-12 data_content">
+        <span class ="username">{{ username }}</span>
+      </div>
+    </div>
+    <div class ="row userdata_container" style ="height: 10px;">
+      <div class ="col-12 data_content">
+        <span class ="usercourse">{{ usercourse }}</span>
+      </div>
+    </div>
+  </div>
+  <!-- ====== textarea and other input field ====== -->
+  <div class ="container">
+    <div class ="row pen">
+      <div class ="col-12 input_container">
+        <!-- <form action ="/postHandler" method ="post" enctype ="multipart/form-data"> -->
+        <form (ngSubmit)="onSubmit()" enctype ="multipart/form-data" id ="forms">
+          <textarea name="" id="" cols="0" rows="2" name ="post[textarea]" class ="textarea" spellcheck ="true" placeholder ="Share an Photo, Video Or Knowledge" ></textarea>
+          <input type="file" accept ="image/*" name ="post[image]" class ="imageInput" id ="imageButton" (change) ="previewImage($event)">
+          <input type="file" accept ="video/*" name ="post[video]" class ="videoInput" id ="videoButton" (change) ="previewVideo($event)">
+          <input type="Submit" class ="submitBtn" #post>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- image and video presentation -->
+  <div class ="container-fluid media-presentation">
+    <div class ="row presentation">
+      <!-- image previewer property -->
+      <div class="container image-container">
+        <div class="row image-preview">
+          <!-- generate html for presentation of image and video -->
+          <!-- <div class= "col-3 image-file-container">
+            <i appDelete class= "fa fa-times remover_icon" aria-hidden= "true"></i>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- video previewer property -->
+      <div class ="container video-container"></div>
+    </div>
+  </div>
+
+  <!-- buttons including image and video uploader -->
+  <div class ="container">
+    <div class ="row pen">
+      <!-- image uploader -->
+      <div class ="col-1 button-group">
+        <a class ="button" data-toggle ="tooltip" title ="Add-Image" (click) ="triggerImageUploader()">
+          <i class ="fa fa-camera-retro icon"></i>
+        </a>
+      </div>
+      <!-- video uploader -->
+      <div class ="col-1 button-group">
+        <a class ="button" data-toggle ="tooltip" title ="Add Video" (click) ="triggerVideoUploader()">
+            <i class ="fa fa-video-camera icon"></i>
+        </a>
+      </div>
+      <div class ="col-5 button-group" ></div>
+      <!-- post setting dropdown menu -->
+      <div class ="col-3 button-group">
+          <div class="dropdown">
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Post Setting
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+      </div>
+      <!-- submit button -->
+      <div class ="col-2 button-group">
+        <input type="submit" class ="btn btn-sm btn-primary submit_btn" data-toggle ="tooltip" title ="Post?" value ="Post" (click) ="post.click()">
+      </div>
+    </div>
+  </div>
+</div>

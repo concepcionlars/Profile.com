@@ -1,0 +1,42 @@
+<div class ="row newsfeed_component" *ngFor="let media of newsfeed">
+  <div class ="container-fluid">
+    <div class ="row postOwner_container">
+      <div class ="ownerImage">
+        <a href="" class ="thumbnail">
+          <img src="../assets/me.jpg" alt="" class ="owner_photo">
+        </a>
+      </div>
+      <div class ="col-10 ownerInfo">
+        <div class ="row userdata_container">
+          <div class ="col-12 data_content">
+            <span class ="username">{{ username }}</span>
+          </div>
+        </div>
+        <div class ="row userdata_container">
+          <div class ="col-12 data_content">
+            <span class ="usercourse">{{ usercourse }}</span>
+          </div>
+        </div>
+        <div class ="row userdata_container">
+          <div class ="col-12 data_content">
+            <span class ="timeline">{{media.dateCreated}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+          <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class ="row post_container" *ngFor ="let uploaded of media.uploadedmedia">
+      <div class ="col-12 media_container">
+        <img src="" alt="" class ="media">
+      </div>
+    </div>
+</div>       
