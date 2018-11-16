@@ -25,3 +25,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## About Profile.com
+Profile.com will be the first social networking site where we can teach, learn and share for aspiring filipino student to Help them succeed on their studies 
