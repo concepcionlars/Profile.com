@@ -56,6 +56,9 @@ var storage = multer.diskStorage({
 	}
 })
 
+//=================================================
+// LIMIT THE FILESIZE TO BE UPLOADED IN THIS SERVER
+//=================================================
 var upload = multer({storage: storage,
 	limits: {fileSize: 100000000000}
 });
@@ -81,7 +84,9 @@ server.post('/postHandler', (req, res, next) => {
 	//files metadata
 	const file = req.body;
 
-	/*GENERATE A 32BIT NAME TO BE SAVE IN MONGODB*/
+	//=================================================
+  // GENERATE A 32bit FILENAME TO BE SAVE IN DATABASE
+  //=================================================
 	function makeid() {
 		var text = "";
 		var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -94,8 +99,10 @@ server.post('/postHandler', (req, res, next) => {
 	//Dynamic name and path
 	const name = makeid() + file.filesize;
 	const path = './temp/' + file.filename;
-
-	// transfer and encode the base64 data
+  
+  //=========================================
+	// TRANSFER AND ENCODE A BASE64 BINARY DATA
+  //=========================================
 	const buff = new Buffer(file.binary, 'base64');
 	const image = fs.writeFileSync(path, buff);
 
@@ -151,7 +158,7 @@ server.post('/postHandler', (req, res, next) => {
 				})
 			})
 		})
-		readstream.pipe(uploadStream)
+		 readstream.pipe(uploadStream)
 	})
 })
 
